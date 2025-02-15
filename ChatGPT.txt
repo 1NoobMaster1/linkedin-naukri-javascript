@@ -1,0 +1,68 @@
+{
+    const x = 10; // Blocked Scope.
+    let y = 20; // Blocked Scope.
+    console.log(x); // 10.
+    console.log(y); // 20.
+}
+
+console.log(x); // Error.
+console.log(y); // Error.
+
+fuction testFunction() {
+    if(true) {
+        var z = 30; // Function Scope.
+    }
+    console.log(z); // 30.
+}
+
+console.log(z); // Error.
+testFunction();
+
+1. What is Closure & Lexical Scope?
+ans. Execution Environment/Lexical Environment: Code Phase & Memory Phase.
+This environment manages Functions & Variables & there scopes. 
+function outer() {
+    let a = 10;
+    return function inner() {
+        console.log(a); // a is accessible due to Lexical Scope.
+    }
+}
+
+const func = outer();
+func();
+
+So, Functions that can accees the variables of its parent function.
+
+2. What is Hoisting?
+ans. We can use Functions & Variables before we declared them. Functions & Variables which we can use before declaring them.
+i. Class Hoisting: 
+Classes are Hoisted but not Initialised.
+const obj = new MyClass(); // RefrenceError.
+class MyClass {
+    constructor() {
+        console.log("Class Initialised);
+    }
+}
+
+ii. Function Hoisting:
+sayHello(); // Hello!: Hoisted.
+function sayHello() {
+    console.log("Hello");
+}
+
+sayHi(); // TypeError.
+var sayHi = function () {
+    console.log("Hi!");
+}
+
+iii. const & let are Local Variables & They are in Temporal Dead Zone & var is a Global Variable.
+console.log(a); // RefrenceError.
+const a = 10;
+
+console.log(b); // RefrenceError.
+let b = 20;
+
+console.log(c); // Undefined.
+var c = 30;
+
+So, Classes, Const & Let are Hoisted but not Initialised: Temporal Dead Zone & Functions & Var are Hoisted & Initialised.

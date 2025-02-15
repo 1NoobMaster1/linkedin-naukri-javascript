@@ -1,0 +1,1 @@
+NodeJS: It is a Runtime environment. It is build on top of JavaScript Engine/V8 Engine & written in C++.
