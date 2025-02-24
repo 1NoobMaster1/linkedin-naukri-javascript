@@ -1,0 +1,5 @@
+Browser Context API: Browser Environments & Sessions.
+Execution Context: It is where the code executes.
+Hoisting: Declaration moves at the top before the code declaration/execution.
+Lexical Environment: Managing the Block & Scope.
+Window Object: Interaction with the Browser, 'window.alert(message);'.

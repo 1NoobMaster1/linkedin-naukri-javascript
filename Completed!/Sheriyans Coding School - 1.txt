@@ -1,0 +1,19 @@
+JavaScript:
+a. Keyword v/s Word: Pre-defined Words v/s Words.
+b. const, let & var: Blocked-Scoped, Blocked-Scoped & Function-Scoped/Global Variable.
+c. Difference b/w const, let & var: Reference Error, Reference Error & Undefined.
+d. Window Object: It's an object to interact with the browser. window.alert(message): Displays an alert dialog with the specified message.
+e. Browser Context API: Browser Environments & Sessions.
+f. Stack: Method Execution Area/Last In First Out.
+g. Heap Memory: String with 'new' keyword & StringBuffer & StringBuilder.
+h. Execution Context: Environment in which JavaScript code is executed.
+i. Lexical Environment: It is essentially a mechanism in JavaScript for managing the Functions and Variables within a given scope.
+j. Hoisting: Functions & Variables declarations are moved to the top before the code execution.
+k. Types in JavaScript: Primitive/Value Type & Reference Type. 
+l. How to Copy Reference the Values: Arrays, Functions & Objects.
+m. Conditionals: if, else & else-if ladder.
+n. if, else & else-if Ladder.
+o. switch: Conditional Keyword.
+
+// const, let & var: They all three are hoisted!
+// String, new String, StringBuffer & StringBuilder: Immutable, Immutable, Mutable & Mutable.
